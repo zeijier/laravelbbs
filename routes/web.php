@@ -26,4 +26,8 @@ Auth::routes();  //等同于以下9个路由
 //Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 //Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
+Route::resource('users','UsersController',['only'=>['show','update','edit']]);//等价于以下3个路由
+//Route::get('/users/{user}', 'UsersController@show')->name('users.show');
+//Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
+//Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
 
