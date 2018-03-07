@@ -36,8 +36,6 @@
                             </span>
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
-
-
                             <ul class="dropdown-menu" role="menu">
                                 <li>
                                     {{--直接用路由别名--}}

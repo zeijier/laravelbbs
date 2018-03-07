@@ -60,6 +60,7 @@ class UsersController extends Controller
      */
     public function edit(User $user)
     {
+        $this->authorize('update',$user);
         return view('users.edit',compact('user'));
     }
 
@@ -72,6 +73,7 @@ class UsersController extends Controller
      */
     public function update(UserRequest $request, User $user,ImageUploadHandler $uploader)
     {
+        $this->authorize('update',$user);
         $data = $request->all();
         if ($request->avatar){
             $result = $uploader->save($request->avatar,'avatar',$user->id,262);
@@ -82,6 +84,13 @@ class UsersController extends Controller
         }
         $user->update($data);
         return redirect()->route('users.show',$user->id)->with('success','资料更新成功！');
+    }
+
+    public function __construct()
+    {
+//        第一个参数为中间件的名称，第二个为要进行过滤的动作
+        //除了此处指定的动作以外，所有其他动作都必须登录用户才能访问
+        $this->middleware('auth',['except'=>['show']]);
     }
 
     /**
