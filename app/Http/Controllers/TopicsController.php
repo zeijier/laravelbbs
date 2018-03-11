@@ -16,7 +16,10 @@ class TopicsController extends Controller
 
 	public function index()
 	{
-		$topics = Topic::paginate();
+//	    with()提前加载了后面需要用到的关联属性user 和 category，并做缓存。（这里的user和category是topic模型里面定义的方法）
+		$topics = Topic::with(['user','category'])->paginate(5);
+//		print_r($topics);
+//		die();
 		return view('topics.index', compact('topics'));
 	}
 
