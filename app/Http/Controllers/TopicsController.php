@@ -14,12 +14,12 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index()
+	public function index(Request $request,Topic $topic)
 	{
+	    //$request->order 是获取 URI http://xxxx/topics?order=recent 中的 order 参数。
+	    $topics = $topic->withOrder($request->order)->paginate(3);
 //	    with()提前加载了后面需要用到的关联属性user 和 category，并做缓存。（这里的user和category是topic模型里面定义的方法）
-		$topics = Topic::with(['user','category'])->paginate(5);
-//		print_r($topics);
-//		die();
+//		$topics = Topic::with(['user','category'])->paginate(5);
 		return view('topics.index', compact('topics'));
 	}
 
