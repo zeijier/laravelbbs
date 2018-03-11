@@ -21,8 +21,9 @@
                     </div>
 
                     <div class="media-body meta">
-
-                        <a href="#" title="{{ $topic->category->name }}">
+                        {{--这里href写法都可以，$topic->category->id和$topic->category_id也都可以--}}
+{{--                        <a href="{{route('categories.show',$topic->category->id)}}" title="{{ $topic->category->name }}">--}}
+                        <a href="{{url("categories/$topic->category_id")}}" title="{{ $topic->category->name }}">
                             <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
                             {{ $topic->category->name }}
                         </a>
