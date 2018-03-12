@@ -51,6 +51,7 @@ class Handler extends ExceptionHandler
         return parent::render($request, $exception);
     }
     public function make_excerpt($value,$length = 200){
+        //  试试$value中匹配正则的用空格 替换
         $excerpt = trim(preg_replace('/\r\n|\r|\n+/',' ',strip_tags($value)));
         return str_limit($excerpt,$length);
     }

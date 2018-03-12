@@ -33,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/app/Models/Topic.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -42,9 +42,32 @@
       <file leaf-file-name="Handler.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="736">
-              <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="316">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="40" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding>
+                <marker date="1520841927148" expanded="true" signature="27:45" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="278:290" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="407:427" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="459:479" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="512:520" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="590:603" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="626:643" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="690:708" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="725:734" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="760:777" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="801:819" ph="..." />
+                <marker date="1520841927148" expanded="true" signature="840:849" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,17 +76,17 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Requests/TopicRequest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="660">
-              <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopicsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopicsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TopicsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="252">
+              <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
               <folding>
                 <element signature="e#40#57#0#PHP" expanded="true" />
               </folding>
@@ -71,27 +94,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create_and_edit.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="create_and_edit.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="498">
+              <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="24" />
               <folding>
-                <marker date="1520837999619" expanded="true" signature="9:22" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="34:43" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="315:325" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="357:367" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="515:529" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="547:557" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="591:627" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="804:827" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="934:946" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="1025:1039" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="1196:1226" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="1579:1600" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="1659:1671" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="1677:1691" ph="..." />
-                <marker date="1520837999619" expanded="true" signature="2017:2045" ph="..." />
+                <element signature="e#288#599#0#HTML" expanded="false" />
+                <marker date="1520842129685" expanded="true" signature="9:22" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="33:41" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="94:121" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="141:150" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="622:636" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="654:664" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="698:734" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="911:934" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1041:1053" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1132:1146" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1303:1333" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1686:1707" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1766:1778" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="1784:1798" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2124:2152" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2534:2543" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2588:2611" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2668:2692" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2749:2774" ph="..." />
+                <marker date="1520842129685" expanded="true" signature="2831:2856" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,6 +140,7 @@
       <find>cent</find>
       <find>call</find>
       <find>include</find>
+      <find>yield</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,7 +167,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_03_07_143346_add_avatar_and_introduction_to_users_table.php" />
         <option value="$PROJECT_DIR$/resources/views/common/error.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_message.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/users/edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/UserRequest.php" />
         <option value="$PROJECT_DIR$/app/Handlers/ImageUploadHandler.php" />
@@ -165,12 +194,13 @@
         <option value="$PROJECT_DIR$/resources/views/users/show.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/topics/_sidebar.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" />
         <option value="$PROJECT_DIR$/app/Models/Topic.php" />
         <option value="$PROJECT_DIR$/app/Observers/TopicObserver.php" />
-        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/TopicRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" />
+        <option value="$PROJECT_DIR$/app/Exceptions/Handler.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php" />
       </list>
     </option>
   </component>
@@ -265,11 +295,11 @@
       <path value="$PROJECT_DIR$/vendor/hieu-le/active" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="524" />
-    <option name="y" value="13" />
-    <option name="width" value="1940" />
-    <option name="height" value="1013" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="967" />
+    <option name="y" value="69" />
+    <option name="width" value="1574" />
+    <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -299,63 +329,19 @@
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Console" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Exceptions" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Handlers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Requests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Observers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Providers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
@@ -366,47 +352,30 @@
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="editor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="editor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="topics" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="users" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravelbbs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravelbbs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="routes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="editor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -417,9 +386,19 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="t&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;cre&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/create_and_edit.blade.php&#10;topic&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;_side&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/_sidebar.blade.php&#10;show&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/users/show.blade.php&#10;c&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Http/Controllers/CategoriesController.php&#10;in&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/index.blade.php&#10;topics&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Http/Controllers/TopicsController.php&#10;Topi&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;_he&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/layouts/_header.blade.php&#10;Categories&#9;null&#9;null&#10;web&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/routes/web.php&#10;Databas&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/database/seeds/DatabaseSeeder.php&#10;Topic&#9;null&#9;null&#10;topicTab&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/database/seeds/TopicsTableSeeder.php&#10;TopicObserver&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Providers/AppServiceProvider.php&#10;Cate&#9;null&#9;null&#10;AuthS&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Providers/AuthServiceProvider.php&#10;UserPo&#9;null&#9;null&#10;he&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/layouts/_header.blade.php&#10;ed&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/users/edit.blade.php&#10;config/c&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/vendor/mews/captcha/config/captcha.php&#10;auth&#9;null&#9;null&#10;config/app&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/config/app.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../baoshijie" />
+    <property name="SearchEverywhereHistoryKey" value="app.bl&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/layouts/app.blade.php&#10;t&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;cre&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/create_and_edit.blade.php&#10;topic&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;_side&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/_sidebar.blade.php&#10;show&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/users/show.blade.php&#10;c&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Http/Controllers/CategoriesController.php&#10;in&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/topics/index.blade.php&#10;topics&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Http/Controllers/TopicsController.php&#10;Topi&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Models/Topic.php&#10;_he&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/layouts/_header.blade.php&#10;Categories&#9;null&#9;null&#10;web&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/routes/web.php&#10;Databas&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/database/seeds/DatabaseSeeder.php&#10;Topic&#9;null&#9;null&#10;topicTab&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/database/seeds/TopicsTableSeeder.php&#10;TopicObserver&#9;null&#9;null&#10;app&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Providers/AppServiceProvider.php&#10;Cate&#9;null&#9;null&#10;AuthS&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/app/Providers/AuthServiceProvider.php&#10;UserPo&#9;null&#9;null&#10;he&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/layouts/_header.blade.php&#10;ed&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/resources/views/users/edit.blade.php&#10;config/c&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/vendor/mews/captcha/config/captcha.php&#10;auth&#9;null&#9;null&#10;config/app&#9;FILE&#9;file://D:/app/phpStudy/PHPTutorial/WWW/laravelbbs/config/app.php" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\app\phpStudy\PHPTutorial\WWW\laravelbbs\public\css" />
+      <recent name="D:\app\phpStudy\PHPTutorial\WWW\laravelbbs\public\js" />
+      <recent name="D:\app\phpStudy\PHPTutorial\WWW\laravelbbs\resources\assets\editor\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\app\phpStudy\PHPTutorial\WWW\laravelbbs\resources\assets\editor\css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -452,12 +431,12 @@
       <workItem from="1520525215249" duration="380000" />
       <workItem from="1520572927212" duration="387000" />
       <workItem from="1520752786796" duration="13093000" />
-      <workItem from="1520836014552" duration="2281000" />
+      <workItem from="1520836014552" duration="4075000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79115000" />
+    <option name="totallyTimeSpent" value="80909000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,10 +448,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="524" y="13" width="1940" height="1013" extended-state="1" />
+    <frame x="967" y="69" width="1574" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2696715" sideWeight="0.49514562" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26948482" sideWeight="0.49514562" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871014" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22797357" sideWeight="0.504914" order="1" side_tool="true" content_ui="tabs" />
@@ -551,23 +530,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="919" column="23" lean-forward="false" selection-start-line="919" selection-start-column="23" selection-end-line="919" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="261" column="13" lean-forward="false" selection-start-line="261" selection-start-column="13" selection-end-line="261" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/images/avatar/201803/07/1_1520416872_T0EDKmDUJ9.jpg" />
-    <entry file="file://$PROJECT_DIR$/public/uploads/images/avatar/201803/07/1_1520416532_bGjRr93NB0.jpg" />
     <entry file="file://$PROJECT_DIR$/config/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -826,38 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1520837999619" expanded="true" signature="9:22" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="34:43" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="315:325" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="357:367" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="515:529" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="547:557" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="591:627" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="804:827" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="934:946" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="1025:1039" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="1196:1226" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="1579:1600" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="1659:1671" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="1677:1691" ph="..." />
-            <marker date="1520837999619" expanded="true" signature="2017:2045" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Observers/TopicObserver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -866,28 +796,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Topic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/TopicRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
-          <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TopicsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="252">
+          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
           <folding>
             <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Topic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/editor/js/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/hotkeys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/simditor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="39" selection-start-column="5" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <marker date="1520841927148" expanded="true" signature="27:45" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="278:290" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="407:427" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="459:479" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="512:520" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="590:603" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="626:643" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="690:708" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="725:734" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="760:777" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="801:819" ph="..." />
+            <marker date="1520841927148" expanded="true" signature="840:849" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="24" />
+          <folding>
+            <element signature="e#288#599#0#HTML" expanded="false" />
+            <marker date="1520842129685" expanded="true" signature="9:22" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="33:41" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="94:121" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="141:150" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="622:636" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="654:664" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="698:734" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="911:934" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1041:1053" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1132:1146" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1303:1333" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1686:1707" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1766:1778" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="1784:1798" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2124:2152" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2534:2543" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2588:2611" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2668:2692" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2749:2774" ph="..." />
+            <marker date="1520842129685" expanded="true" signature="2831:2856" ph="..." />
           </folding>
         </state>
       </provider>

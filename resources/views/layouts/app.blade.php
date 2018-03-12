@@ -9,6 +9,7 @@
     {{--@yield('title', 'LaraBBS') 继承此模板的页面，如果没有定制 title 区域的话，就会自动使用第二个参数 LaraBBS 作为标题前缀。--}}
     <title>@yield('title','laravelBBS')--!!</title>
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    @yield('styles')
 </head>
 <body>
 {{--route_class 是自定义的辅助方法--}}
@@ -21,5 +22,6 @@
     @include('layouts._footer')
 </div>
 <script src="{{asset('js/app.js')}}"></script>
+@yield('scripts')
 </body>
 </html>
