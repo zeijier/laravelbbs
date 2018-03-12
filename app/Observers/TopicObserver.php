@@ -18,4 +18,8 @@ class TopicObserver
     {
         //
     }
+    public function saving(Topic $topic){
+        // make_excerpt 是定义的辅助方法
+        $topic->excerpt = make_excerpt($topic->body);
+    }
 }
