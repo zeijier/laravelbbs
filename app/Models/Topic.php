@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Category;
 use App\User;
 
+
 class Topic extends Model
 {
 //    protected $table = 'topics';
@@ -19,7 +20,10 @@ class Topic extends Model
     public function user(){
         return $this->belongsTo('App\User','user_id');
     }
-
+    // 一个主题有很多回复
+    public function replies(){
+        return $this->hasMany(Reply::class);
+    }
     public function scopeWithOrder($query,$order){
         //不同的排序，使用不同的数据读取逻辑
         switch ($order){
@@ -42,5 +46,9 @@ class Topic extends Model
         // 当话题有新回复时，我们将编写逻辑来更新话题模型的 reply_count 属性，
         // 此时会自动触发框架对数据模型 updated_at 时间戳的更新
         return $query->orderBy('updated_at', 'desc');
+    }
+    public function link($params = []){
+        //array_merge   把2个数组合成一个数组
+        return route('topics.show',array_merge([$this->id,$this->slug],$params));
     }
 }

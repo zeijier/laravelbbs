@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Reply;
 use App\Models\Topic;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -30,7 +31,12 @@ class User extends Authenticatable
     public function topics(){
         return $this->hasMany(Topic::class);
     }
+    // 一个用户有很多回复
+    public function replies(){
+        return $this->hasMany(Reply::class);
+    }
     public function isAuthorOf($model){
         return $this->id == $model->user_id;
     }
+
 }
