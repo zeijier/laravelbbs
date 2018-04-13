@@ -9,7 +9,7 @@ use App\User;
 class Topic extends Model
 {
 //    protected $table = 'topics';
-    protected $fillable = ['title', 'body', 'category_id', 'order', 'excerpt', 'slug'];
+    protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
 //category—— 一个话题属于一个分类；
 
     //要用public修饰！！！

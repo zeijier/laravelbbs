@@ -13,7 +13,7 @@
                     <hr>
                     <div class="media">
                         <div align="center">
-                            <a href="{{ route('users.show', $topic->user->id) }}">
+                            <a href="{{ route('users.show', $topic->user_id) }}">
                                 <img class="thumbnail img-responsive" src="{{ $topic->user->avatar }}" width="300px" height="300px">
                             </a>
                         </div>
@@ -31,7 +31,7 @@
 
                     <div class="article-meta text-center">
                         {{ $topic->created_at->diffForHumans() }}
-                        ⋅
+
                         <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
                         {{ $topic->reply_count }}
                     </div>
@@ -39,10 +39,11 @@
                     <div class="topic-body">
                         {!! $topic->body !!}
                     </div>
+                    {{-- 有更新和删除权限才显示出来--}}
                 @can('update',$topic)
                     <div class="operate">
                         <hr>
-                        <a href="{{ route('topics.edit', $topic->id) }}" class="btn btn-default btn-xs" role="button">
+                        <a href="{{ route('topics.edit',$topic->id) }}" class="btn btn-default btn-xs" role="button">
                             <i class="glyphicon glyphicon-edit"></i> 编辑
                         </a>
                         <form method="post" action="{{route('topics.destroy',$topic->id)}}">
@@ -58,7 +59,11 @@
             {{-- 用户回复列表 --}}
             <div class="panel panel-default topic-reply">
                 <div class="panel-body">
-                    @include('topics._reply_box', ['topic' => $topic])
+                    {{--话题回复功能我们只允许登录用户使用，未登录用户不显示即可。Laravel Blade 模板提供了一个『视条件加载子模板』的语法
+                        includeWhen  当用户登录才显示回复框
+                    --}}
+                    @includeWhen(Auth::check(),'topics._reply_box',['topic'=>$topic])
+                    {{--@include('topics._reply_box', ['topic' => $topic])--}}
                     @include('topics._reply_list', ['replies' => $topic->replies()->with('user')->get()])
                 </div>
             </div>

@@ -8,8 +8,8 @@
                 </a>
 
                 <div class="reply-content" style="margin: 6px 0;">
-                    {{$reply->content}}
-{{--                    {!! $reply->content !!}--}}
+                    {{--{{$reply->content}}--}}
+                    {!! $reply->content !!}
                 </div>
 
                 <div class="meta">

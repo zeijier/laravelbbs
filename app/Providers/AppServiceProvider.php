@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Reply;
 use App\Models\Topic;
 use App\Observers\TopicObserver;
 use Illuminate\Support\Facades\Schema;
@@ -20,6 +21,7 @@ class AppServiceProvider extends ServiceProvider
 //        设置carbon 的中文时间提示
         \Carbon\Carbon::setLocale('zh');
         Topic::observe(TopicObserver::class);
+//        Reply::observe(Reply::class);
 
     }
 
