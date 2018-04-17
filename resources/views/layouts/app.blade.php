@@ -22,6 +22,10 @@
     </div>
     @include('layouts._footer')
 </div>
+{{--这里sudosu 的模板调用代码--}}
+@if(app()->isLocal())
+    @include('sudosu::user-selector')
+    @endif
 <script src="{{asset('js/app.js')}}"></script>
 @yield('scripts')
 </body>

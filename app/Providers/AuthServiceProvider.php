@@ -12,6 +12,7 @@ class AuthServiceProvider extends ServiceProvider
      *
      * @var array
      */
+    //一旦该授权类存在，就需要将它注册
     protected $policies = [
 		 \App\Models\Reply::class => \App\Policies\ReplyPolicy::class,
 		 \App\Models\Topic::class => \App\Policies\TopicPolicy::class,
@@ -28,6 +29,11 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        //Horizon 控制面板访问权限
+//        \Horizon::auth(function ($request){
+//            //是否是站长
+//            return Auth::user()->hasRole('Founder');
+//        });
+
     }
 }

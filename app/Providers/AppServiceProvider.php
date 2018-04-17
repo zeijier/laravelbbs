@@ -37,5 +37,8 @@ class AppServiceProvider extends ServiceProvider
             $this->app->register(\Summerblue\Generator\GeneratorsServiceProvider::class);
 
         }
+        if (app()->isLocal()){
+            $this->app->register(\VIACreative\SudoSu\ServiceProvider::class);
+        }
     }
 }
