@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Handlers\ImageUploadHandler;
 use App\Models\Topic;
+use App\User;
 use Faker\Provider\Image;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use Illuminate\Support\Facades\Auth;
+
 
 class TopicsController extends Controller
 {
@@ -21,11 +23,15 @@ class TopicsController extends Controller
 
 	public function index(Request $request,Topic $topic)
 	{
+
 	    //$request->order 是获取 URI http://xxxx/topics?order=recent 中的 order 参数。
-	    $topics = $topic->withOrder($request->order)->paginate(3);
+	    $topics = $topic->withOrder($request->order)->paginate(20);
 //	    with()提前加载了后面需要用到的关联属性user 和 category，并做缓存。（这里的user和category是topic模型里面定义的方法）
 //		$topics = Topic::with(['user','category'])->paginate(5);
-		return view('topics.index', compact('topics'));
+        $user = new  User();
+        $active_users = $user->getActiveUsers();
+
+		return view('topics.index', compact('topics','active_users'));
 	}
 
     public function show(Topic $topic)
