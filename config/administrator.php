@@ -9,6 +9,7 @@ return array(
      *
      * @type string
      */
+    // 后台的 URI 入口
     'uri' => 'admin',
 
     /*
@@ -16,6 +17,7 @@ return array(
      *
      *  @type string
      */
+    // 后台专属域名，没有的话可以留空
     'domain' => '',
 
     /*
@@ -23,6 +25,7 @@ return array(
      *
      * @type string
      */
+    // 应用名称，在页面标题和左上角站点名称处显示
     'title' => env('APP_NAME', 'Laravel'),
 
     /*
@@ -84,6 +87,12 @@ return array(
      *
      * @type closure
      */
+    /*
+    * 权限控制的回调函数。
+    *
+    * 此回调函数需要返回 true 或 false ，用来检测当前用户是否有权限访问后台。
+    * `true` 为通过，`false` 会将页面重定向到 `login_path` 选项定义的 URL 中。
+    */
     'permission' => function () {
         // 只要是能管理内容的用户，就允许访问后台
         return Auth::check() && Auth::user()->can('manage_contents');
@@ -109,7 +118,8 @@ return array(
      *
      * @type string
      */
-    'home_page' => 'users',
+    // 进入后台展示项
+    'home_page' => 'topics',
 
     /*
      * The route to which the user will be taken when they click the "back to site" button
@@ -123,14 +133,14 @@ return array(
      *
      * @type string
      */
-    'login_path' => 'login',
+    // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
+    'login_path' => 'permission-denied',
 
     /*
      * The logout path is the path where Administrator will send the user when they click the logout link
      *
      * @type string
      */
-    // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
     'logout_path' => 'login',
 
     /*
