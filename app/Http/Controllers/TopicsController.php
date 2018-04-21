@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Handlers\ImageUploadHandler;
+use App\Models\Link;
 use App\Models\Topic;
 use App\User;
 use Faker\Provider\Image;
@@ -21,7 +22,7 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index(Request $request,Topic $topic)
+	public function index(Request $request,Topic $topic,Link $link)
 	{
 
 	    //$request->order 是获取 URI http://xxxx/topics?order=recent 中的 order 参数。
@@ -30,8 +31,8 @@ class TopicsController extends Controller
 //		$topics = Topic::with(['user','category'])->paginate(5);
         $user = new  User();
         $active_users = $user->getActiveUsers();
-
-		return view('topics.index', compact('topics','active_users'));
+        $links = $link->getAllCached();
+		return view('topics.index', compact('topics','active_users','links'));
 	}
 
     public function show(Topic $topic)
