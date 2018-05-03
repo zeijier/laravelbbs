@@ -11,7 +11,8 @@
 |
 */
 //命名路由可以方便地为指定路由生成 URL 或者重定向。通过在路由定义上链式调用 name 方法指定路由名称：
-Route::get('/','PageController@root')->name('root');
+//Route::get('/','PageController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 
 Auth::routes();  //等同于以下9个路由
 //Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
