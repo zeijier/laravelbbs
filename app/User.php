@@ -15,6 +15,7 @@ class User extends Authenticatable
     //使用 laravel-permission 提供的 Trait —— HasRoles
     //此举能让我们获取到扩展包提供的所有权限和角色的操作方法。
     use HasRoles;
+    use Models\Traits\LastActivedAtHelper;
     /**
      * The attributes that are mass assignable.
      *
