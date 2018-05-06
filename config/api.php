@@ -18,7 +18,9 @@ return [
     | https://tools.ietf.org/html/rfc6838
     |
     */
-
+//x 本地开发的或私有环境的
+//    prs 未对外发布的，提供给公司 app，单页应用，桌面应用等
+//vnd 对外发布的，开放给所有用户
     'standardsTree' => env('API_STANDARDS_TREE', 'x'),
 
     /*
@@ -32,7 +34,7 @@ return [
     | For example: Accept: application/x.SUBTYPE.v1+json
     |
     */
-
+//API_SUBTYPE 一般情况下是我们项目的简称
     'subtype' => env('API_SUBTYPE', ''),
 
     /*
@@ -57,7 +59,7 @@ return [
     | specify it for each group.
     |
     */
-
+//
     'prefix' => env('API_PREFIX', null),
 
     /*
@@ -69,7 +71,7 @@ return [
     | specify it for each group.
     |
     */
-
+//api 域名
     'domain' => env('API_DOMAIN', null),
 
     /*
