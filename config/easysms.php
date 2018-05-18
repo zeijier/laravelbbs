@@ -11,7 +11,7 @@ return [
 
         // 默认可用的发送网关
         'gateways' => [
-            'yunpian',
+            'juhe',
         ],
     ],
     // 可用的网关配置
@@ -19,8 +19,8 @@ return [
         'errorlog' => [
             'file' => '/tmp/easy-sms.log',
         ],
-        'yunpian' => [
-            'api_key' => env('YUNPIAN_API_KEY'),
+        'juhe' => [
+            'api_key' => env('JUHE_API_KEY'),
         ],
     ],
 ];
