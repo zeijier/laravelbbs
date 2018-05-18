@@ -20,7 +20,7 @@ return [
             'file' => '/tmp/easy-sms.log',
         ],
         'juhe' => [
-            'api_key' => env('JUHE_API_KEY'),
+            'app_key' => env('JUHE_API_KEY'),
         ],
     ],
 ];
