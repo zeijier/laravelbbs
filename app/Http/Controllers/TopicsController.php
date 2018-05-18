@@ -7,9 +7,7 @@ use App\Handlers\ImageUploadHandler;
 use App\Models\Link;
 use App\Models\Topic;
 use App\User;
-use Faker\Provider\Image;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
 use Illuminate\Support\Facades\Auth;
 
@@ -67,8 +65,8 @@ class TopicsController extends Controller
 	public function update(TopicRequest $request, Topic $topic)
 	{
 		$this->authorize('update', $topic);
+//		var_dump($request->all());die;
 		$topic->update($request->all());
-
 		return redirect()->route('topics.show', $topic->id)->with('message', '更新成功');
 	}
 
