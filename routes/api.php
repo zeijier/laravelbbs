@@ -46,7 +46,7 @@ $api->version('v1',[
         $api->post('captchas','CaptchasController@store')
             ->name('api.captchas.store');
 //        第三方登录
-        $api->post('socials/{social_type}/authorizations','AuthorizationsController@socialStore')
+        $api->post('socials/{social_type}/authorizations','AuthorizationController@socialStore')
             ->name('api.authorizations.store');
 
         });
