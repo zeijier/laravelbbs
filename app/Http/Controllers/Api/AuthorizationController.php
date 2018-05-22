@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Requests\Api\AuthorizationloginRequest;
 use App\Http\Requests\Api\AuthorizationRequest;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 
 class AuthorizationController extends Controller
 {
+//    TODO  ！！ 第三方登录
     public function socialStore($type, AuthorizationRequest $request)
     {
         if (!in_array($type, ['weixin'])) {
@@ -55,5 +58,23 @@ class AuthorizationController extends Controller
         }
 
         return $this->response->array(['token' => $user->id]);
+    }
+
+//    登录
+    public function store(AuthorizationloginRequest $request){
+        $username = $request->username;
+        filter_var($username,FILTER_VALIDATE_EMAIL)?
+            $credentials['email'] = $username:
+            $credentials['phone'] = $username;
+        $credentials['password'] = $request->password;
+        if (!$token = Auth::guard('api')->attempt($credentials)){
+            return $this->response->errorUnauthorized('用户名或密码错误');
+        }
+        return $this->response->array([
+            'access_token'=>$token,
+            'token_type'=>'Bearer',
+//            单位是秒 *60 是一个小时
+            'expires_in'=>Auth::guard('api')->factory()->getTTl()*60,
+        ])->setStatusCode(201);
     }
 }

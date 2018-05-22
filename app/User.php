@@ -7,8 +7,9 @@ use App\Models\Topic;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Spatie\Permission\Traits\HasRoles;
+use Tymon\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable
+class User extends Authenticatable implements JWTSubject
 {
     use Models\Traits\ActiveUserHelper;
     use Notifiable;
@@ -59,5 +60,15 @@ class User extends Authenticatable
             $path = "/uploads/images/avatar/$path";
         }
         $this->attributes['avatar']= $path;
+    }
+
+//    继承JWTSubject  接口  要实现2个方法
+    public function getJWTCustomClaims()
+    {
+        return (array)$this->getKey();
+    }
+    public function getJWTIdentifier()
+    {
+        return [];
     }
 }

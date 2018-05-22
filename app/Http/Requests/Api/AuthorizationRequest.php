@@ -21,6 +21,7 @@ class AuthorizationRequest extends FormRequest
      *
      * @return array
      */
+//    第三方登录
     public function rules()
     {
         return [

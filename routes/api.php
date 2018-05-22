@@ -48,7 +48,9 @@ $api->version('v1',[
 //        第三方登录
         $api->post('socials/{social_type}/authorizations','AuthorizationController@socialStore')
             ->name('api.authorizations.store');
-
+//      登录
+        $api->post('authorizations','AuthorizationController@store')
+            ->name('api.authorizations.store');
         });
 
 });
