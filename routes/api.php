@@ -52,5 +52,10 @@ $api->version('v1',[
         $api->post('authorizations','AuthorizationController@store')
             ->name('api.authorizations.store');
         });
-
+//        刷新token
+        $api->put('authorizations/current','AuthorizationController@update')
+            ->name('api.authorizations.update');
+//        删除token
+        $api->delete('authorizations/current','AuthorizationController@destroy')
+            ->name('api.authorizations.destroy');
 });
