@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\Api\UserRequest;
+use App\Transformers\UserTransformer;
 use App\User;
 use Illuminate\Support\Facades\Cache;
 
@@ -24,5 +25,11 @@ class UsersController extends Controller
         ]);
         Cache::forget($request->verification_kay);
         return $this->response->created();
+    }
+
+    public function me(){
+//        dingo 的trait提供了user() 方法，获取当前登录的用户。
+//        $this->user() 等同于\Auth::guard('api')->user()。
+        return $this->response->item($this->user(),new UserTransformer());
     }
 }

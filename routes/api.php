@@ -17,17 +17,6 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 $api = app('Dingo\Api\Routing\Router');
-//$api->version('v1', function($api) {
-//    $api->get('version', function() {
-//        return response('this is version v1');
-//    });
-//});
-//
-//$api->version('v2', function($api) {
-//    $api->get('version', function() {
-//        return response('this is version v2');
-//    });
-//});
 $api->version('v1',[
     'namespace'=>'App\Http\Controllers\Api'
 ],function ($api) {  //DingoApi 已经为我们提供了调用频率限制的中间件 api.throttle  调用频率限制
@@ -58,4 +47,12 @@ $api->version('v1',[
 //        删除token
         $api->delete('authorizations/current','AuthorizationController@destroy')
             ->name('api.authorizations.destroy');
+
+
+//      需要token验证的接口
+        $api->group(['middleware'=>'api.auth'],function ($api){
+            //当前登录用户信息
+            $api->get('user','UsersController@me')
+                ->name('api.user.show');
+        });
 });
