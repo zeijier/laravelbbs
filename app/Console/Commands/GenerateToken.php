@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+
 use App\User;
 use Illuminate\Console\Command;
 
@@ -19,7 +20,7 @@ class GenerateToken extends Command
      *
      * @var string
      */
-    protected $description = '快速为用户生成token';
+    protected $description = 'Fast generation token';
 
     /**
      * Create a new command instance.
@@ -38,12 +39,15 @@ class GenerateToken extends Command
      */
     public function handle()
     {
-        $userId = $this->ask('输入用户生成的token');
+        $userId = $this->ask('user-id');
+
         $user = User::find($userId);
-        if (!$user){
-            return $this->error('用户不存在');
+
+        if (!$user) {
+            return $this->error('this user no exist');
         }
-//        一年过期
+
+        // 一年以后过期
         $ttl = 365*24*60;
         $this->info(\Auth::guard('api')->setTTL($ttl)->fromUser($user));
     }

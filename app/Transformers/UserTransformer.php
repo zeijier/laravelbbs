@@ -19,6 +19,4 @@ class UserTransformer extends TransformerAbstract{
             'updated_at' => $user->updated_at->toDateTimeString(),
         ];
     }
-
-
 }

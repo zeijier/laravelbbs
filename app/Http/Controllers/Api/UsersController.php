@@ -28,6 +28,7 @@ class UsersController extends Controller
     }
 
     public function me(){
+//            TODO 获取不到用户
 //        dingo 的trait提供了user() 方法，获取当前登录的用户。
 //        $this->user() 等同于\Auth::guard('api')->user()。
         return $this->response->item($this->user(),new UserTransformer());
