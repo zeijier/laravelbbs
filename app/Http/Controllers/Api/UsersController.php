@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Cache;
 class UsersController extends Controller
 {
     public function store(UserRequest $request){
+        return 88;
         $verifyData = Cache::get($request->verification_key);
         if (!$verifyData){
             return $this->response->error('验证码已失效',422);
@@ -26,11 +27,10 @@ class UsersController extends Controller
         Cache::forget($request->verification_kay);
         return $this->response->created();
     }
-
     public function me(){
 //            TODO 获取不到用户
 //        dingo 的trait提供了user() 方法，获取当前登录的用户。
 //        $this->user() 等同于\Auth::guard('api')->user()。
-        return $this->response->item($this->user(),new UserTransformer());
+        return $this->response->collection($this->user(),new UserTransformer());
     }
 }

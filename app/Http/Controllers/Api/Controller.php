@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use Dingo\Api\Routing\Helpers;
 use Illuminate\Routing\Controller as BaseController;
-use Illuminate\Http\Request;
 
 class Controller extends BaseController
 {
