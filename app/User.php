@@ -65,7 +65,8 @@ class User extends Authenticatable implements JWTSubject
 //    继承JWTSubject  接口  要实现2个方法
     public function getJWTCustomClaims()
     {
-        return (array)$this->getKey();
+        return $this->getKey();
+//        return (array)$this->getKey();
     }
     public function getJWTIdentifier()
     {

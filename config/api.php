@@ -21,6 +21,7 @@ return [
 //x 本地开发的或私有环境的
 //    prs 未对外发布的，提供给公司 app，单页应用，桌面应用等
 //vnd 对外发布的，开放给所有用户
+//    Accept: application/<API_STANDARDS_TREE>.<API_SUBTYPE>.v1+json
     'standardsTree' => env('API_STANDARDS_TREE', 'x'),
 
     /*
@@ -64,7 +65,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default API Domain
+    | Default API Domain  特别要注意的是：前缀和子域名，两者有且只有一个 !!!
     |--------------------------------------------------------------------------
     |
     | A default domain to use for your API routes so you don't have to
